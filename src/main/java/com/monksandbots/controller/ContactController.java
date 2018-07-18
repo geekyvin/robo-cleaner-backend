@@ -19,7 +19,7 @@ public class ContactController {
     ContactService contactService;
 
     @PostMapping("/sendQuery")
-    public ResponseEntity register(@RequestBody Query query) {
+    public ResponseEntity saveQuery(@RequestBody Query query) {
         contactService.saveQuery(query);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
