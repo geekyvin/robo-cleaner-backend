@@ -1,4 +1,13 @@
-##Instructions to Run the Application
+
+#### This is the solution for the Marshmallow Java Backend Test
+
+### Instruction to pull the repo
+
+```console
+git clone git@github.com:geekyvin/robo-cleaner-backend.git
+```
+
+### Instructions to Run the Application
 
 cd to project folder [robo-cleaner-backend]
 
