@@ -1,4 +1,4 @@
-package com.monksandbots.config;
+package com.mashmellow.config;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
