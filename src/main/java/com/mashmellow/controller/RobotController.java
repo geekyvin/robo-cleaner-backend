@@ -19,8 +19,15 @@ public class RobotController {
     RobotService robotService;
 
     @PostMapping("/clean")
-    public ResponseEntity register(@RequestBody GridInformation gridInformation) throws OutTheGridException {
-        CleanerInfo cleanerInfo = robotService.clean(gridInformation);
+    public ResponseEntity register(@RequestBody GridInformation gridInformation) {
+        CleanerInfo cleanerInfo = null;
+        try {
+            cleanerInfo = robotService.clean(gridInformation);
+        } catch (OutTheGridException e) {
+            e.printStackTrace();
+            return ResponseEntity.badRequest().body("Invalid Input!");
+
+        }
         return ResponseEntity.ok(cleanerInfo);
     }
 
