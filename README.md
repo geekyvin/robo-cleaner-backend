@@ -20,7 +20,7 @@ To Execute the Jar application run the following command
 java -jar build/libs/marshmellow-0.1.0.jar
 ```
 
-Open postman and send the post request to run the code to http://localhost:8080/api/robot/clean
+Open postman and send the below JSON in post request to run the code to http://localhost:8080/api/robot/clean
 
 ```console
 {
