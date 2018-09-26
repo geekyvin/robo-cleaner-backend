@@ -1,8 +1,7 @@
-package com.mashmellow.service;
-
 import com.mashmellow.exception.OutTheGridException;
 import com.mashmellow.model.CleanerInfo;
 import com.mashmellow.model.GridInformation;
+import com.mashmellow.service.RobotService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
